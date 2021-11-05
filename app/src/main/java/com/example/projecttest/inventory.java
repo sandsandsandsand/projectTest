@@ -1,0 +1,27 @@
+package com.example.projecttest;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+public class inventory
+{
+    public ArrayList<item> items;
+    public ArrayList<pokedigimon> party;
+
+
+    public void removeItem(item target)
+    {
+        items.remove(target);
+    }
+    public void removePokedigimon(pokedigimon target)
+    {
+        party.remove(target);
+    }
+    public void addItem(item target)
+    {
+        items.add(target);
+    }
+    public void addPokedigimon(pokedigimon target)
+    {
+        party.add(target);
+    }
+}
+
