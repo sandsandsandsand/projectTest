@@ -19,6 +19,7 @@ public class mapGrid extends GridLayout
                 for (int col = 0; col < side; col++)
                 {
                     if(row == 0 || col == 0 || row == 4 || col == 4)
+                        //there's overlap at the corners, luckily we don't need to care
                         buttons[row][col] = new mapButtonWall(context);
                     else
                         buttons[row][col] = new mapButtonGrass(context);
