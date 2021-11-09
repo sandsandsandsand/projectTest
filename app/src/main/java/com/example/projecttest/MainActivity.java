@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "This pokedigimon is not available", Toast.LENGTH_SHORT).show();
     }
     public void back(View view){
-        Toast.makeText(getApplicationContext(), "This back button is in progress", Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), "Thank you for your consideration", Toast.LENGTH_SHORT).show();
-        //this.exit();
+        setContentView(grid);
     }
 }

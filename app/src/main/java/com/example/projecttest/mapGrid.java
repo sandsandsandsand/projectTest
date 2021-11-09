@@ -42,12 +42,6 @@ public class mapGrid extends GridLayout
                 }
             }
         buttons[2][2].flipToPlayer();
-
+        System.out.println("COUNT:  " + mapButton.count);
     }
-
-//    private void initiateButtons(Context context)
-//    {
-//        buttons[0][0] = new mapButtonGrass(context);
-//        buttons[0][0] = new mapButtonGrass(context);
-//    }
 }

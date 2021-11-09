@@ -10,13 +10,15 @@ public class mapButton extends androidx.appcompat.widget.AppCompatButton
     public mapButton[][] gridRef;
     public int x;
     public int y;
-    public boolean hasPlayer = false;
+    public boolean hasPlayer;
     public boolean traversable = false;
+    static int count = 0;
     //a tile on the map
     public mapButton(Context context)
     {
 
         super(context);
+        count++;
     }
     public void activate()
     {
