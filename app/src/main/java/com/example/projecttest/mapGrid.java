@@ -27,6 +27,7 @@ public class mapGrid extends GridLayout
                     addView( buttons[row][col], width, width );
                 }
             }
+        buttons[1][1].activateTest();
 
     }
 

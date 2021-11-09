@@ -15,6 +15,10 @@ public class mapButton extends androidx.appcompat.widget.AppCompatButton
     {
         System.out.println("by default do nothing, wall tiles will not override activate");
     }
+    public void activateTest()
+    {
+
+    }
 
 
 }
