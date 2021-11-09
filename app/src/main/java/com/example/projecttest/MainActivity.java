@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private mapGrid grid;
@@ -29,5 +32,31 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id = item.getItemId();
+        if(id==R.id.action_party)
+        {
+            setContentView(R.layout.party);
+            return true;
+        }
+        else
+            return super.onOptionsItemSelected(item);
+    }
+    public void clickFire(View view){
+        Toast.makeText(getApplicationContext(), "Fire pokedigimon was chosen", Toast.LENGTH_SHORT).show();
+    }
+    public void clickWater(View view){
+        Toast.makeText(getApplicationContext(), "Water pokedigimon was chosen", Toast.LENGTH_SHORT).show();
+    }
+    public void clickOther(View view){
+        Toast.makeText(getApplicationContext(), "This pokedigimon is not available", Toast.LENGTH_SHORT).show();
+    }
+    public void back(View view){
+        Toast.makeText(getApplicationContext(), "This back button is in progress", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Thank you for your consideration", Toast.LENGTH_SHORT).show();
+        //this.exit();
     }
 }
