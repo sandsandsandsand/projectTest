@@ -33,4 +33,8 @@ public class mapButton extends androidx.appcompat.widget.AppCompatButton
     {
         System.out.println("THIS SHOULDN'T PRINT");
     }
+    protected void flipFromPlayer()
+    {
+        System.out.println("THIS SHOULDN'T PRINT");
+    }
 }

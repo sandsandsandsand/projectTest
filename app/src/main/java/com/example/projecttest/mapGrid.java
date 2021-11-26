@@ -30,6 +30,7 @@ public class mapGrid extends GridLayout
                     ((mapButton) butt).gridRef = buttons;
                     ((mapButton) butt).x = row;
                     ((mapButton) butt).y = col;
+                    ((mapButton) butt).getId();
                     butt.setOnClickListener(new View.OnClickListener()
                     {
                         public void onClick(View view)

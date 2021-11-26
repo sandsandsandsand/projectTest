@@ -48,29 +48,29 @@ extends mapButton
         if(gridRef[x+1][y].hasPlayer)
         {
             System.out.printf("\n PLAYER FOUND AT %d %d",x+1,y);
-            flipFromPlayer();
-            gridRef[x+1][y].flipToPlayer();
+            flipToPlayer();
+            gridRef[x+1][y].flipFromPlayer();
             return;
         }
         else if(gridRef[x-1][y].hasPlayer)
         {
             System.out.printf("\n PLAYER FOUND AT %d %d",x-1,y);
-            flipFromPlayer();
-            gridRef[x-1][y].flipToPlayer();
+            flipToPlayer();
+            gridRef[x-1][y].flipFromPlayer();
             return;
         }
         else if(gridRef[x][y+1].hasPlayer)
         {
             System.out.printf("\n PLAYER FOUND AT %d %d",x,y+1);
-            flipFromPlayer();
-            gridRef[x][y+1].flipToPlayer();
+            flipToPlayer();
+            gridRef[x][y+1].flipFromPlayer();
             return;
         }
         else if(gridRef[x][y-1].hasPlayer)
         {
             System.out.printf("\n PLAYER FOUND AT %d %d \n",x,y-1);
-            flipFromPlayer();
-            gridRef[x][y-1].flipToPlayer();
+            flipToPlayer();
+            gridRef[x][y-1].flipFromPlayer();
             return;
 
         }
