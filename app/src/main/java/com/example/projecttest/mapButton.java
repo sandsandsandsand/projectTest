@@ -13,7 +13,7 @@ public class mapButton extends androidx.appcompat.widget.AppCompatButton
     public int y;
     public boolean traversable = false;
     static int count = 0;
-    public AppCompatActivity scene;
+    public MainActivity scene;
 
     //a tile on the map
     public mapButton(Context context)

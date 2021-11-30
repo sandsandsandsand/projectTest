@@ -15,7 +15,7 @@ public class mapButtonAntagonist
     {
         super(context);
         setBackgroundResource(R.drawable.antagonist);
-        antagonists.add(new pokedigimon(10,10,10,10,"fire"));
+        antagonists.add(new pokedigimon(10,10,10,2,"fire"));
     }
 
     public void activate()
@@ -28,22 +28,23 @@ public class mapButtonAntagonist
 
         if(gridRef[x+1][y].checkPlayer())
         {
-            scene.setContentView(R.layout.battle1);
+            scene.startBattle(this,antagonists);
+
             return;
         }
         else if(gridRef[x-1][y].checkPlayer())
         {
-            scene.setContentView(R.layout.battle1);
+            scene.startBattle(this,antagonists);
             return;
         }
         else if(gridRef[x][y+1].checkPlayer())
         {
-            scene.setContentView(R.layout.battle1);
+            scene.startBattle(this,antagonists);
             return;
         }
         else if(gridRef[x][y-1].checkPlayer())
         {
-            scene.setContentView(R.layout.battle1);
+            scene.startBattle(this,antagonists);
             return;
 
         }

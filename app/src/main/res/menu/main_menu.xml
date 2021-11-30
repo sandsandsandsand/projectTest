@@ -7,9 +7,4 @@
         android:orderInCategory="100"
         android:title="menu"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/attack"
-        android:orderInCategory="100"
-        android:title="Attack"
-        app:showAsAction="ifRoom" />
 </menu>
