@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:id="@+id/npcImage"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/npc_port" />
+
+    <TextView
+        android:id="@+id/npcText"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/npcImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="46dp"
+        android:background="@color/purple_200"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Please invest into my funny coin"
+        android:textSize="50dp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/backDialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/npcText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/partyMenu"
+        android:onClick="back"
+        android:text="Back"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

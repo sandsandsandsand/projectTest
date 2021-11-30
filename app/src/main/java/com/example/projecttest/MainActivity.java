@@ -57,4 +57,13 @@ public class MainActivity extends AppCompatActivity {
     public void back(View view){
         setContentView(grid);
     }
+    public void backDialog(View view)
+    {
+        setContentView(grid);
+    }
+    public void startDialog(View view)
+    {
+        setContentView(R.layout.dialogue);
+    }
+
 }

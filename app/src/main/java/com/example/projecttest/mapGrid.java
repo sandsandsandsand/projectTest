@@ -6,13 +6,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class mapGrid extends GridLayout
 {
     private int side;
+    private AppCompatActivity main;
     private mapButton[][] buttons = new mapButton[5][5];
 
     public mapGrid(Context context,int width, int Nside) {
         super(context);
+        main = (AppCompatActivity) context;
         this.side = Nside;
         setColumnCount(side);
         setRowCount(side);
@@ -29,6 +33,12 @@ public class mapGrid extends GridLayout
                     else if(row == 3 && col == 3)
                     {
                         buttons[row][col] = new mapButtonAntagonist(context);
+                    }
+                    else if(row == 2 && col == 3)
+                    {
+
+                        buttons[row][col] = new mapButtonDialog(context);
+                        buttons[row][col].scene = main;
                     }
                     else
                         buttons[row][col] = new mapButtonGrass(context);
