@@ -47,10 +47,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_menu) {
             setContentView(R.layout.main_menu);
             return true;
-        } else if (id == R.id.attack) {
-            setContentView(R.layout.battle1);
-            return true;
-        } else
+        }  else
             return super.onOptionsItemSelected(item);
     }
 
