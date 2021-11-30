@@ -27,61 +27,67 @@
         app:rowCount="3">
 
         <ImageButton
-            android:id="@+id/fire"
+            android:id="@+id/first"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:background="@color/partyMenu"
-            android:onClick="clickFire"
+            android:onClick="setParty"
+            android:tag="1"
             app:layout_column="0"
             app:layout_row="0"
-            app:srcCompat="@drawable/firs" />
+            app:srcCompat="@drawable/other" />
 
         <ImageButton
-            android:id="@+id/water"
+            android:id="@+id/second"
             android:layout_width="152dp"
             android:layout_height="137dp"
             android:background="@color/partyMenu"
-            android:onClick="clickWater"
+            android:onClick="setParty"
+            android:tag="2"
             app:layout_column="1"
             app:layout_row="0"
-            app:srcCompat="@drawable/water" />
+            app:srcCompat="@drawable/other" />
 
         <ImageButton
-            android:id="@+id/other1"
+            android:id="@+id/third"
             android:layout_width="161dp"
             android:layout_height="wrap_content"
             android:background="@color/partyMenu"
-            android:onClick="clickOther"
+            android:onClick="setParty"
+            android:tag="3"
             app:layout_column="0"
             app:layout_row="1"
             app:srcCompat="@drawable/other" />
 
         <ImageButton
-            android:id="@+id/other2"
+            android:id="@+id/fourth"
             android:layout_width="157dp"
             android:layout_height="wrap_content"
             android:background="@color/partyMenu"
-            android:onClick="clickOther"
+            android:onClick="setParty"
+            android:tag="4"
             app:layout_column="1"
             app:layout_row="1"
             app:srcCompat="@drawable/other" />
 
         <ImageButton
-            android:id="@+id/other3"
+            android:id="@+id/fifth"
             android:layout_width="158dp"
             android:layout_height="139dp"
             android:background="@color/partyMenu"
-            android:onClick="clickOther"
+            android:onClick="setParty"
+            android:tag="5"
             app:layout_column="0"
             app:layout_row="2"
             app:srcCompat="@drawable/other" />
 
         <ImageButton
-            android:id="@+id/other4"
+            android:id="@+id/sixth"
             android:layout_width="154dp"
             android:layout_height="145dp"
             android:background="@color/partyMenu"
-            android:onClick="clickOther"
+            android:onClick="setParty"
+            android:tag="6"
             app:layout_column="1"
             app:layout_row="2"
             app:srcCompat="@drawable/other" />
@@ -92,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/partyMenu"
-        android:onClick="back2Menu"
+        android:onClick="back2Grid"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

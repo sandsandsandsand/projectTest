@@ -2,6 +2,7 @@ package com.example.projecttest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Menu;
@@ -66,13 +67,18 @@ public class MainActivity extends AppCompatActivity {
     public void back2Grid() {
         setContentView(grid);
     }
+    public void back2Grid(View view) {
+        setContentView(grid);
+    }
 
     public void back2Menu(View view) {
         setContentView(R.layout.main_menu);
     }
 
     public void openParty(View view) {
-        setContentView(R.layout.party);
+        //setContentView(R.layout.party);
+        Intent partyIntent = new Intent(this, Party.class);
+        this.startActivity(partyIntent);
     }
 
     public void run(View view) {

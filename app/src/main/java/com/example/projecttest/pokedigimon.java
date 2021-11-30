@@ -24,6 +24,12 @@ public class pokedigimon {
         else
             return false;
     }
+    public void setName(String newname){
+        name = newname;
+    }
+    public String getName(){
+        return name;
+    }
 
 
 }
