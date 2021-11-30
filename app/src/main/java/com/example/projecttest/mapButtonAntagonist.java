@@ -2,14 +2,20 @@ package com.example.projecttest;
 
 import android.content.Context;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+
 public class mapButtonAntagonist
         extends mapButton
 
 {
+    public ArrayList<pokedigimon> antagonists = new ArrayList<>();
     public mapButtonAntagonist(Context context)
     {
         super(context);
         setBackgroundResource(R.drawable.antagonist);
+        antagonists.add(new pokedigimon(10,10,10,10,"fire"));
     }
 
     public void activate()
@@ -22,22 +28,22 @@ public class mapButtonAntagonist
 
         if(gridRef[x+1][y].checkPlayer())
         {
-            //start battle
+            scene.setContentView(R.layout.battle1);
             return;
         }
         else if(gridRef[x-1][y].checkPlayer())
         {
-            //start battle
+            scene.setContentView(R.layout.battle1);
             return;
         }
         else if(gridRef[x][y+1].checkPlayer())
         {
-            //start battle
+            scene.setContentView(R.layout.battle1);
             return;
         }
         else if(gridRef[x][y-1].checkPlayer())
         {
-            //start battle
+            scene.setContentView(R.layout.battle1);
             return;
 
         }

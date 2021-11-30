@@ -42,7 +42,11 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.main_menu);
             return true;
         }
-        else
+        else if(id==R.id.attack)
+        {
+            setContentView(R.layout.battle1);
+            return true;
+        } else
             return super.onOptionsItemSelected(item);
     }
     public void clickFire(View view){
@@ -58,8 +62,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(grid);
     }
     public void back2Menu(View view){setContentView(R.layout.main_menu);}
-    public void openParty(View view){setContentView(R.layout.party);};
-
+    public void openParty(View view){setContentView(R.layout.party);}
+    public void run(View view){
+        setContentView(grid);
+    }
+    public void fight(View view){}
 
 
 }
