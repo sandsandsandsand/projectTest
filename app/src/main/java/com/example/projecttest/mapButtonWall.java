@@ -10,4 +10,5 @@ public class mapButtonWall
         super(context);
         setBackgroundResource(R.drawable.wall);
     }
+
 }

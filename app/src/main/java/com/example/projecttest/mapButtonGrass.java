@@ -45,28 +45,28 @@ extends mapButton
         System.out.printf("\n checking neighbors from %d,%d",x,y);
 
         System.out.printf("\n CHECKING 1 %d,%d",gridRef[x+1][y].x,gridRef[x+1][y].y);
-        if(gridRef[x+1][y].hasPlayer)
+        if(gridRef[x+1][y].checkPlayer())
         {
             System.out.printf("\n PLAYER FOUND AT %d %d",x+1,y);
             flipToPlayer();
             gridRef[x+1][y].flipFromPlayer();
             return;
         }
-        else if(gridRef[x-1][y].hasPlayer)
+        else if(gridRef[x-1][y].checkPlayer())
         {
             System.out.printf("\n PLAYER FOUND AT %d %d",x-1,y);
             flipToPlayer();
             gridRef[x-1][y].flipFromPlayer();
             return;
         }
-        else if(gridRef[x][y+1].hasPlayer)
+        else if(gridRef[x][y+1].checkPlayer())
         {
             System.out.printf("\n PLAYER FOUND AT %d %d",x,y+1);
             flipToPlayer();
             gridRef[x][y+1].flipFromPlayer();
             return;
         }
-        else if(gridRef[x][y-1].hasPlayer)
+        else if(gridRef[x][y-1].checkPlayer())
         {
             System.out.printf("\n PLAYER FOUND AT %d %d \n",x,y-1);
             flipToPlayer();
@@ -78,6 +78,8 @@ extends mapButton
             return;
 
     }
-
-
+    protected boolean checkPlayer()
+    {
+        return hasPlayer;
+    }
 }

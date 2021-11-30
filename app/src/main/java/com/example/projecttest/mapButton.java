@@ -10,7 +10,6 @@ public class mapButton extends androidx.appcompat.widget.AppCompatButton
     public mapButton[][] gridRef;
     public int x;
     public int y;
-    public boolean hasPlayer;
     public boolean traversable = false;
     static int count = 0;
     //a tile on the map
@@ -36,5 +35,11 @@ public class mapButton extends androidx.appcompat.widget.AppCompatButton
     protected void flipFromPlayer()
     {
         System.out.println("THIS SHOULDN'T PRINT");
+    }
+
+
+    protected boolean checkPlayer()
+    {
+        return false;
     }
 }
