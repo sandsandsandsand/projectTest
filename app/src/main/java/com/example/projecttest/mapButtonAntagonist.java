@@ -15,7 +15,7 @@ public class mapButtonAntagonist
     {
         super(context);
         setBackgroundResource(R.drawable.antagonist);
-        antagonists.add(new pokedigimon(10,10,10,2,"fire"));
+        antagonists.add(new pokedigimon(10,1,15,2,"fire"));
     }
 
     public void activate()

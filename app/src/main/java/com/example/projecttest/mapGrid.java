@@ -33,13 +33,13 @@ public class mapGrid extends GridLayout
                     else if(row == 3 && col == 3)
                     {
                         buttons[row][col] = new mapButtonAntagonist(context);
-                        buttons[row][col].scene = main;
+                        buttons[row][col].scene = (MainActivity) main;
                     }
                     else if(row == 2 && col == 3)
                     {
 
                         buttons[row][col] = new mapButtonDialog(context);
-                        buttons[row][col].scene = main;
+                        buttons[row][col].scene = (MainActivity) main;
                     }
                     else
                         buttons[row][col] = new mapButtonGrass(context);

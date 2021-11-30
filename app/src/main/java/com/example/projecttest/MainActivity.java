@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         //ButtonHandler buttonHandle = new ButtonHandler();
         grid = new mapGrid(this, width, 5);
         setContentView(grid);
-        friends.add(new pokedigimon(10, 10, 10, 2, "fire"));
-        friends.add(new pokedigimon(10, 10, 10, 2, "water"));
+        friends.add(new pokedigimon(10, 5, 10, 2, "fire"));
+        friends.add(new pokedigimon(10, 5, 10, 2, "water"));
 
 
     }
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "This pokedigimon is not available", Toast.LENGTH_SHORT).show();
     }
 
-    public void back2Grid(View view) {
+    public void back2Grid() {
         setContentView(grid);
     }
 
@@ -79,16 +79,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(grid);
     }
 
-    public void fight(View view) {
-
+    public void fight(View view)
+    {
+        battleControl.startAttacks();
     }
 
     public void startBattle(View view, ArrayList<pokedigimon> antags)
     {
-        battleControl = new battleMaster(friends,antags);
+        battleControl = new battleMaster(friends,antags,this);
         setContentView(R.layout.battle1);
     }
-
 
 
 }
