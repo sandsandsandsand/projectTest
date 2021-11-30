@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item)
     {
         int id = item.getItemId();
-        if(id==R.id.action_party)
+        if(id==R.id.action_menu)
         {
-            setContentView(R.layout.party);
+            setContentView(R.layout.main_menu);
             return true;
         }
         else
@@ -54,16 +54,12 @@ public class MainActivity extends AppCompatActivity {
     public void clickOther(View view){
         Toast.makeText(getApplicationContext(), "This pokedigimon is not available", Toast.LENGTH_SHORT).show();
     }
-    public void back(View view){
+    public void back2Grid(View view){
         setContentView(grid);
     }
-    public void backDialog(View view)
-    {
-        setContentView(grid);
-    }
-    public void startDialog(View view)
-    {
-        setContentView(R.layout.dialogue);
-    }
+    public void back2Menu(View view){setContentView(R.layout.main_menu);}
+    public void openParty(View view){setContentView(R.layout.party);};
+
+
 
 }

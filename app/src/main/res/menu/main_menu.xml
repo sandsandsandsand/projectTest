@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.projectTest.MainActivity">
     <item
-        android:id="@+id/action_party"
+        android:id="@+id/action_menu"
         android:orderInCategory="100"
-        android:title="party"
+        android:title="menu"
         app:showAsAction="ifRoom" />
 </menu>
