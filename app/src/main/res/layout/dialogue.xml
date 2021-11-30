@@ -39,7 +39,7 @@
         android:layout_marginTop="7dp"
         android:layout_marginRight="16dp"
         android:background="@color/partyMenu"
-        android:onClick="back"
+        android:onClick="back2Grid"
         android:text="Back"
         android:visibility="visible" />
 
